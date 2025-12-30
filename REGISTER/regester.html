@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+    <main class="flex-grow flex items-center justify-center p-6 my-10">
+      <div
+        class="w-full max-w-2xl bg-white shadow-xl rounded-2xl overflow-hidden border border-slate-100"
+      >
+        <div class="p-8 md:p-12">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-extrabold text-slate-800 mb-2">
+              Join Us Today
+            </h2>
+            <p class="text-slate-500 text-sm">
+              Join to access powerful tools and a seamless experience.
+            </p>
+          </div>
+
+          <form action="#" method="post" class="space-y-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div class="space-y-1">
+                <label for="fname" class="text-sm font-semibold text-slate-700"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  id="fname"
+                  placeholder="First Name"
+                  class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none transition-all"
+                />
+              </div>
+              <div class="space-y-1">
+                <label for="lname" class="text-sm font-semibold text-slate-700"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  id="lname"
+                  placeholder="Last Name"
+                  class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none transition-all"
+                />
+              </div>
+            </div>
+
+            <div class="space-y-1">
+              <label for="email" class="text-sm font-semibold text-slate-700"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                id="email"
+                placeholder="name@company.com"
+                class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none transition-all"
+              />
+            </div>
+
+            <div class="space-y-1">
+              <label for="username" class="text-sm font-semibold text-slate-700"
+                >Username</label
+              >
+              <input
+                type="text"
+                id="username"
+                placeholder="Choose a unique username"
+                class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none transition-all"
+              />
+            </div>
+
+            <div class="space-y-1">
+              <label for="password" class="text-sm font-semibold text-slate-700"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="password"
+                placeholder="••••••••"
+                class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none transition-all"
+              />
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div class="space-y-1">
+                <label
+                  for="country"
+                  class="text-sm font-semibold text-slate-700"
+                  >Country</label
+                >
+                <select
+                  id="country"
+                  class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none transition-all appearance-none"
+                >
+                  <option selected disabled>Select country</option>
+                  <option value="egypt">Egypt</option>
+                  <option value="ksa">KSA</option>
+                  <option value="usa">USA</option>
+                </select>
+              </div>
+              <div class="space-y-1">
+                <label for="gender" class="text-sm font-semibold text-slate-700"
+                  >Gender</label
+                >
+                <select
+                  id="gender"
+                  class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-sky-500 outline-none transition-all appearance-none"
+                >
+                  <option selected disabled>Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2 py-2">
+              <input
+                type="checkbox"
+                id="checkbox"
+                class="w-4 h-4 text-sky-600 border-slate-300 rounded focus:ring-sky-500"
+              />
+              <label for="checkbox" class="text-sm text-slate-500">
+                I agree to the
+                <a href="#" class="text-sky-600 font-semibold hover:underline"
+                  >Terms and Conditions</a
+                >
+              </label>
+            </div>
+
+            <button
+              type="button"
+              class="w-full bg-sky-600 text-white py-3.5 rounded-lg font-bold hover:bg-sky-700 shadow-md hover:shadow-lg transition-all cursor-pointer"
+            >
+              Create Account
+            </button>
+          </form>
+
+          <div class="relative my-10">
+            <div class="absolute inset-0 flex items-center">
+              <span class="w-full border-t border-slate-100"></span>
+            </div>
+            <div class="relative flex justify-center text-xs uppercase">
+              <span
+                class="bg-white px-4 text-slate-400 font-bold tracking-widest"
+                >Or sign up with</span
+              >
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a
+              href="#"
+              class="flex items-center justify-center gap-2 p-3 border border-slate-200 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-50 transition-all"
+            >
+              <i class="fa-solid fa-circle-user text-slate-600"></i> Phone
+            </a>
+            <a
+              href="#"
+              class="flex items-center justify-center gap-2 p-3 border border-slate-200 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-50 transition-all"
+            >
+              <i class="fa-brands fa-facebook text-slate-600"></i> Facebook
+            </a>
+            <a
+              href="#"
+              class="flex items-center justify-center gap-2 p-3 border border-slate-200 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-50 transition-all"
+            >
+              <i class="fa-brands fa-github text-slate-600"></i> Github
+            </a>
+          </div>
+
+          <p class="text-center text-sm text-slate-500 mt-8">
+            Already have an account?
+            <a
+              href="../LOGIN/login.html"
+              class="text-sky-600 font-bold hover:underline"
+              >Sign In</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-8 bg-white border-t border-slate-100 text-center">
+      <p class="text-xs text-slate-400 font-medium tracking-wide">
+        © 2025
+        <span class="text-slate-800 font-bold uppercase">YourStore</span>. All
+        rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

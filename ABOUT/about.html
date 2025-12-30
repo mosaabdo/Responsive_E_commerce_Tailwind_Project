@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Story | YourStore</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-900">
+    <header
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100"
+    >
+      <nav
+        class="flex items-center justify-between h-16 px-6 max-w-6xl mx-auto"
+      >
+        <div class="flex items-center gap-2 group cursor-pointer">
+          <i class="fa-solid fa-bag-shopping text-2xl text-sky-600"></i>
+          <h1
+            class="font-bold text-xl tracking-tight text-slate-800 group-hover:text-sky-600 transition-colors"
+          >
+            YourStore
+          </h1>
+        </div>
+
+        <ul class="hidden md:flex gap-8 text-slate-500 text-sm font-semibold">
+          <li>
+            <a href="../HOME/index.html" class="hover:text-sky-600 transition-colors"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="../PRODUCTS/products.html"
+              class="hover:text-sky-600 transition-colors"
+              >Collections</a
+            >
+          </li>
+          <li>
+            <a href="../CATEGORY/category.html" class="hover:text-sky-600 transition-colors"
+              >Categories</a
+            >
+          </li>
+          <li><a href="#" class="text-sky-600 border-sky-600">Our Story</a></li>
+          <li>
+            <a href="../CART/cart.html" class="hover:text-sky-600 transition-colors"
+              >Cart</a
+            >
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+          <a
+            href="../LOGIN/login.html"
+            class="bg-sky-600 text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-slate-600 shadow-md transition-all"
+            >Login</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-16">
+      <section class="text-center mb-20">
+        <h2 class="text-4xl font-extrabold text-slate-800 mb-6">
+          Everything You Need, All in One Place
+        </h2>
+        <p class="text-slate-500 text-lg max-w-3xl mx-auto leading-relaxed">
+          Founded in 2025, our store was built on a simple mission: to provide
+          high-quality products that enhance your daily life. From the latest
+          tech to lifestyle essentials, we curate the best for you.
+        </p>
+      </section>
+
+      <section class="mb-24">
+        <div class="rounded-3xl overflow-hidden shadow-2xl mb-12">
+          <img
+            class="w-full h-[500px] object-cover"
+            src="../ABOUT/assets/12821.jpg"
+            alt="Modern Shopping Experience"
+          />
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <p class="text-slate-600 leading-loose text-lg">
+            We don't just sell products; we deliver experiences. Our team works
+            tirelessly to source items from trusted global partners, ensuring
+            that every order meets our strict quality and sustainability
+            standards.
+          </p>
+          <p
+            class="text-slate-600 leading-loose text-lg border-l-4 border-sky-600 pl-6 italic bg-slate-50 py-4 rounded-r-lg"
+          >
+            "Shopping should be more than a transaction; it should be a seamless
+            journey of discovery and satisfaction."
+          </p>
+        </div>
+      </section>
+
+      <!-- Our Services Section -->
+      <section class="mb-24">
+        <div class="text-center mb-12">
+          <span class="text-sky-600 font-bold uppercase text-xs tracking-widest mb-2 block">What We Offer</span>
+          <h2 class="text-4xl font-extrabold text-slate-800 mb-4">Our Services</h2>
+          <p class="text-slate-500 text-lg max-w-2xl mx-auto">
+            We provide comprehensive services to ensure your shopping experience is seamless and satisfying.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition-all group">
+            <div class="w-16 h-16 bg-sky-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sky-600 transition-colors">
+              <i class="fa-solid fa-truck-fast text-2xl text-sky-600 group-hover:text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-800 mb-3">Fast Shipping</h3>
+            <p class="text-slate-500 leading-relaxed">
+              We offer express shipping options to get your products delivered quickly and safely to your doorstep.
+            </p>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition-all group">
+            <div class="w-16 h-16 bg-sky-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sky-600 transition-colors">
+              <i class="fa-solid fa-shield-halved text-2xl text-sky-600 group-hover:text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-800 mb-3">Quality Guarantee</h3>
+            <p class="text-slate-500 leading-relaxed">
+              Every product is carefully selected and tested to meet our high quality standards. Your satisfaction is guaranteed.
+            </p>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition-all group">
+            <div class="w-16 h-16 bg-sky-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sky-600 transition-colors">
+              <i class="fa-solid fa-headset text-2xl text-sky-600 group-hover:text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-800 mb-3">24/7 Support</h3>
+            <p class="text-slate-500 leading-relaxed">
+              Our customer support team is available around the clock to assist you with any questions or concerns.
+            </p>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition-all group">
+            <div class="w-16 h-16 bg-sky-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sky-600 transition-colors">
+              <i class="fa-solid fa-rotate-left text-2xl text-sky-600 group-hover:text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-800 mb-3">Easy Returns</h3>
+            <p class="text-slate-500 leading-relaxed">
+              Not satisfied? Return any product within 30 days for a full refund. No questions asked.
+            </p>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition-all group">
+            <div class="w-16 h-16 bg-sky-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sky-600 transition-colors">
+              <i class="fa-solid fa-credit-card text-2xl text-sky-600 group-hover:text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-800 mb-3">Secure Payment</h3>
+            <p class="text-slate-500 leading-relaxed">
+              Your payment information is protected with industry-leading encryption and security measures.
+            </p>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition-all group">
+            <div class="w-16 h-16 bg-sky-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sky-600 transition-colors">
+              <i class="fa-solid fa-gift text-2xl text-sky-600 group-hover:text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-800 mb-3">Loyalty Rewards</h3>
+            <p class="text-slate-500 leading-relaxed">
+              Earn points with every purchase and redeem them for discounts and exclusive offers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-24">
+        <section class="p-10 bg-slate-700 rounded-3xl text-white">
+          <div class="flex items-center gap-4 mb-4 text-sky-400">
+            <i class="fa-solid fa-check-double text-2xl"></i>
+            <h2 class="text-2xl font-bold">Curated Selection</h2>
+          </div>
+          <p class="text-slate-300 leading-relaxed">
+            Every item in our catalog is hand-picked. We focus on durability,
+            functionality, and modern design so you can shop with total
+            confidence.
+          </p>
+        </section>
+        <section class="p-10 bg-sky-600 rounded-3xl text-white">
+          <div class="flex items-center gap-4 mb-4">
+            <i class="fa-solid fa-truck-fast text-2xl"></i>
+            <h2 class="text-2xl font-bold">Global Delivery</h2>
+          </div>
+          <p class="text-sky-50 leading-relaxed">
+            Our logistics network ensures that your favorite products reach your
+            doorstep safely and quickly, no matter where you are located.
+          </p>
+        </section>
+      </div>
+
+      <section class="mb-24">
+        <h2 class="text-3xl font-bold text-slate-800 mb-12 text-center">
+          The Team Behind Your Satisfaction
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
+          <div class="group text-center">
+            <div
+              class="relative overflow-hidden rounded-2xl mb-4 aspect-square bg-slate-100 border border-slate-100"
+            >
+              <img
+                src="assets/dev.png"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                alt="Founder"
+              />
+            </div>
+            <h3
+              class="font-bold text-xl text-slate-800 group-hover:text-sky-600 transition-colors"
+            >
+              AbdElrahman
+            </h3>
+            <p
+              class="text-sky-600 font-medium uppercase text-xs tracking-widest mt-1"
+            >
+              Founder & CEO
+            </p>
+          </div>
+          <div class="group text-center">
+            <div
+              class="relative overflow-hidden rounded-2xl mb-4 aspect-square bg-slate-100 border border-slate-100"
+            >
+              <img
+                src="assets/boy.png"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                alt="Architect"
+              />
+            </div>
+            <h3
+              class="font-bold text-xl text-slate-800 group-hover:text-sky-600 transition-colors"
+            >
+              AbdAllah
+            </h3>
+            <p
+              class="text-sky-600 font-medium uppercase text-xs tracking-widest mt-1"
+            >
+              Operations Manager
+            </p>
+          </div>
+          <div class="group text-center">
+            <div
+              class="relative overflow-hidden rounded-2xl mb-4 aspect-square bg-slate-100 border border-slate-100"
+            >
+              <img
+                src="assets/emp.png"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                alt="Support"
+              />
+            </div>
+            <h3
+              class="font-bold text-xl text-slate-800 group-hover:text-sky-600 transition-colors"
+            >
+              Mousa
+            </h3>
+            <p
+              class="text-sky-600 font-medium uppercase text-xs tracking-widest mt-1"
+            >
+              Customer Success
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-slate-50 rounded-3xl p-8 md:p-12 overflow-hidden shadow-sm border border-slate-100"
+      >
+        <div class="flex flex-col lg:flex-row gap-12">
+          <div
+            class="lg:w-1/2 rounded-2xl overflow-hidden border-2 border-white shadow-inner"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.731005627231!2d32.899661414983!3d23.98758838447143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f772ba6f7881c9%3A0xe7a505d9284f0490!2sAswan%20Sahara%20Campus!5e0!3m2!1sen!2seg!4v1620000000000!5m2!1sen!2seg"
+              class="w-full h-[400px]"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="lg:w-1/2 flex flex-col justify-center">
+            <span
+              class="text-sky-600 font-bold uppercase text-xs tracking-widest mb-2"
+              >Our Base</span
+            >
+            <h2 class="text-3xl font-bold text-slate-800 mb-6">
+              Visit Our Headquarters
+            </h2>
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <i
+                  class="fa-solid fa-location-dot text-sky-600 text-xl mt-1"
+                ></i>
+                <div>
+                  <h4 class="font-bold text-slate-800">Operational Hub</h4>
+                  <p class="text-slate-500 text-sm leading-relaxed">
+                    Aswan Sahara Campus, Egypt Creativity Center.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <i class="fa-solid fa-envelope text-sky-600 text-xl mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-slate-800">Support Email</h4>
+                  <p class="text-slate-500 text-sm">support@yourstore.com</p>
+                </div>
+              </div>
+              <a
+                href="../REGISTER/regester.html"
+                class="inline-block bg-sky-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-slate-600 shadow-lg transition-all w-fit mt-4"
+                >Join Our Community</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-800 text-white py-16">
+      <div
+        class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12"
+      >
+        <div class="col-span-1">
+          <div
+            class="flex items-center gap-2 mb-6 text-sky-400 font-bold text-xl"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="text-slate-50 hover:text-sky-400">YourStore</span>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Providing premium products for your lifestyle. Quality you can
+            trust, service you can rely on.
+          </p>
+          <div class="flex gap-4 text-xl">
+            <i
+              class="hover:text-sky-400 fa-brands fa-github text-slate-100 text-lg cursor-pointer"
+            ></i>
+            <i
+              class="hover:text-sky-400 fa-brands fa-facebook text-slate-100 text-lg cursor-pointer"
+            ></i>
+            <i
+              class="hover:text-sky-400 fa-solid fa-circle-user text-slate-100 text-lg cursor-pointer"
+            ></i>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold mb-6 text-slate-200">Shop Categories</h4>
+          <ul class="space-y-4 text-slate-400 text-sm">
+            <li><a href="#" class="hover:text-sky-400">Electronics</a></li>
+            <li><a href="#" class="hover:text-sky-400">Lifestyle</a></li>
+            <li><a href="#" class="hover:text-sky-400">Fashion</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-6 text-slate-200">Customer Care</h4>
+          <ul class="space-y-4 text-slate-400 text-sm">
+            <li><a href="#" class="hover:text-sky-400">Shipping Policy</a></li>
+            <li>
+              <a href="#" class="hover:text-sky-400">Returns & Exchanges</a>
+            </li>
+            <li><a href="#" class="hover:text-sky-400">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-6 text-slate-200">Contact</h4>
+          <p class="text-slate-400 text-sm mb-4">Sahara Campus, Aswan</p>
+          <p class="text-slate-400 text-sm">info@yourstore.com</p>
+        </div>
+      </div>
+      <div
+        class="max-w-6xl mx-auto px-6 mt-16 pt-8 border-t border-slate-800 text-center text-xs text-slate-500 uppercase tracking-widest"
+      >
+        © 2025 YourStore — Premium Marketplace.
+      </div>
+    </footer>
+  </body>
+</html>

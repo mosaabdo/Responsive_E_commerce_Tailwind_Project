@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections | YourStore</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-900">
+    <header
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100"
+    >
+      <nav
+        class="flex items-center justify-between h-16 px-6 max-w-6xl mx-auto"
+      >
+        <div class="flex items-center gap-2 group cursor-pointer">
+          <i class="fa-solid fa-bag-shopping text-2xl text-sky-600"></i>
+          <h1
+            class="font-bold text-xl tracking-tight text-slate-800 group-hover:text-sky-600 transition-colors"
+          >
+            YourStore
+          </h1>
+        </div>
+
+        <ul class="hidden md:flex gap-8 text-slate-500 text-sm font-semibold">
+          <li>
+            <a href="../HOME/index.html" class="hover:text-sky-600 transition-colors"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="products.html"
+              class="text-sky-600 border-sky-600"
+              >Collections</a
+            >
+          </li>
+          <li>
+            <a href="../CATEGORY/category.html" class="hover:text-sky-600 transition-colors"
+              >Categories</a
+            >
+          </li>
+          <li>
+            <a
+              href="../ABOUT/about.html"
+              class="hover:text-sky-600 transition-colors"
+              >Our Story</a
+            >
+          </li>
+          <li>
+            <a href="../CART/cart.html" class="hover:text-sky-600 transition-colors"
+              >Cart</a
+            >
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+          <a
+            href="../LOGIN/login.html"
+            class="bg-sky-600 text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-slate-600 shadow-md transition-all"
+            >Login</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="ml-[5%]">
+        <h3 class="text-base">Results</h3>
+        <p class="text-sm">
+          Check each product page for other buying options. Price and other
+          details may vary based on product size and colour.
+        </p>
+      </div>
+
+      <button
+        id="up"
+        type="button"
+        class="hidden fixed bottom-5 right-10 z-50 text-white bg-sky-600 hover:bg-slate-800 shadow-xl rounded-full w-12 h-12 flex items-center justify-center transition-all duration-300 cursor-pointer"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+
+      <div class="flex justify-items-center justify-around">
+        <section
+          class="grid grid-cols-1 w-[95%] md:grid-cols-[80%_20%] my-10 md:gap-5"
+        >
+          <section
+            id="productd"
+            class="min-h-screen px-6 grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+          ></section>
+
+          <section
+            id="a_side"
+            class="hidden md:block h-fit sticky top-20 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm"
+          >
+            <h3
+              class="font-bold text-lg mb-6 flex items-center gap-2 border-b pb-2"
+            >
+              <i class="fa-solid fa-sliders text-sky-600"></i> Filters
+            </h3>
+
+            <div class="mb-6">
+              <label
+                class="block text-xs font-bold uppercase tracking-wider mb-2 text-slate-400"
+                >Search</label
+              >
+              <div class="relative">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search products..."
+                  class="w-full p-2.5 pl-9 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-500 outline-none"
+                />
+                <i
+                  class="fa-solid fa-magnifying-glass absolute left-3 top-3.5 text-slate-400 text-xs"
+                ></i>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label
+                class="block text-xs font-bold uppercase tracking-wider mb-2 text-slate-400"
+                >Category</label
+              >
+              <select
+                id="category-filter"
+                class="w-full p-2.5 text-sm border border-slate-200 rounded-xl cursor-pointer outline-none focus:ring-2 focus:ring-sky-500"
+              >
+                <option value="">All Categories</option>
+              </select>
+            </div>
+
+            <div class="mb-6">
+              <label
+                class="block text-xs font-bold uppercase tracking-wider mb-2 text-slate-400"
+                >Sort By</label
+              >
+              <select
+                id="sort-filter"
+                class="w-full p-2.5 text-sm border border-slate-200 rounded-xl cursor-pointer outline-none"
+              >
+                <option value="">Default</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating-desc">Highest Rated</option>
+              </select>
+            </div>
+            <div class="mb-6">
+              <label
+                class="block text-xs font-bold uppercase tracking-wider mb-2 text-slate-400"
+                >Brand</label
+              >
+              <select
+                id="brand-filter"
+                class="w-full p-2.5 text-sm border border-slate-200 rounded-xl cursor-pointer outline-none focus:ring-2 focus:ring-sky-500"
+              >
+                <option value="">All Brands</option>
+              </select>
+            </div>
+
+            <div
+              class="mb-6 flex items-center justify-between p-3 bg-slate-50 rounded-xl"
+            >
+              <label
+                class="text-sm font-semibold text-slate-600 cursor-pointer"
+                for="stock-only"
+                >In Stock Only</label
+              >
+              <input
+                type="checkbox"
+                id="stock-only"
+                class="w-5 h-5 accent-sky-600 cursor-pointer"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                class="block text-xs font-bold uppercase tracking-wider mb-2 text-slate-400 flex justify-between"
+              >
+                Max Price
+                <span id="price-value" class="text-sky-600 font-bold"
+                  >$2000</span
+                >
+              </label>
+              <input
+                type="range"
+                id="price-range"
+                min="0"
+                max="2000"
+                step="50"
+                value="2000"
+                class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-sky-600"
+              />
+            </div>
+
+            <button
+              id="clear-filters"
+              class="w-full py-3 text-sm font-bold text-red-500 bg-red-50 rounded-xl hover:bg-red-100 transition-colors"
+            >
+              <i class="fa-solid fa-trash-can mr-2"></i> Clear Filters
+            </button>
+          </section>
+        </section>
+      </div>
+      <section class="flex justify-center">
+        <div id="pagination-container" class="flex mb-[25px]"></div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-800 text-white py-16">
+      <div
+        class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12"
+      >
+        <div class="col-span-1">
+          <div
+            class="flex items-center gap-2 mb-6 text-sky-400 font-bold text-xl"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="text-slate-50 hover:text-sky-400">YourStore</span>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Providing premium products for your lifestyle. Quality you can
+            trust, service you can rely on.
+          </p>
+          <div class="flex gap-4 text-xl">
+            <i
+              class="hover:text-sky-400 fa-brands fa-github text-slate-100 text-lg cursor-pointer"
+            ></i>
+            <i
+              class="hover:text-sky-400 fa-brands fa-facebook text-slate-100 text-lg cursor-pointer"
+            ></i>
+            <i
+              class="hover:text-sky-400 fa-solid fa-circle-user text-slate-100 text-lg cursor-pointer"
+            ></i>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold mb-6 text-slate-200">Shop Categories</h4>
+          <ul class="space-y-4 text-slate-400 text-sm">
+            <li><a href="#" class="hover:text-sky-400">Electronics</a></li>
+            <li><a href="#" class="hover:text-sky-400">Lifestyle</a></li>
+            <li><a href="#" class="hover:text-sky-400">Fashion</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-6 text-slate-200">Customer Care</h4>
+          <ul class="space-y-4 text-slate-400 text-sm">
+            <li><a href="#" class="hover:text-sky-400">Shipping Policy</a></li>
+            <li>
+              <a href="#" class="hover:text-sky-400">Returns & Exchanges</a>
+            </li>
+            <li><a href="#" class="hover:text-sky-400">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-6 text-slate-200">Contact</h4>
+          <p class="text-slate-400 text-sm mb-4">Sahara Campus, Aswan</p>
+          <p class="text-slate-400 text-sm">info@yourstore.com</p>
+        </div>
+      </div>
+      <div
+        class="max-w-6xl mx-auto px-6 mt-16 pt-8 border-t border-slate-800 text-center text-xs text-slate-500 uppercase tracking-widest"
+      >
+        © 2025 YourStore — Premium Marketplace.
+      </div>
+    </footer>
+    <script src="products.js"></script>
+  </body>
+</html>
